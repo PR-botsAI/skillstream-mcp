@@ -1,0 +1,21 @@
+{
+  "name": "skillstream-mcp",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Remote MCP server that ships skills (procedural knowledge) — not tools — to any connected agent. Hosted on Cloudflare Workers.",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "start": "wrangler dev",
+    "cf-typegen": "wrangler types",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "agents": "^0.9.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "wrangler": "^4.79.0"
+  }
+}
